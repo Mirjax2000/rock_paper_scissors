@@ -19,55 +19,65 @@ $clr19: #e46643;
 $clr20: #f39765;
 $clr21: #979797;
 $clr22: #c1c4cb;
-$clr23: #f2f2f2;
-$clr24: #202020;
+$clr23: #fff1d9;
+$clr24: #436bfa;
+$clr25: #4e74ff;
 
 $clr99: #505050;
 // -----------------------
 
-// font color
-// text H1
-$clr__header--H1: $clr10;
-$clr__header--H5: $clr10;
-$clr__header--H6: $clr22;
-
-// text H2
-$clr__H2--light: $clr16;
-$clr__H2--dark: $clr22;
-
-// text H3
-$clr-txt-H3: $clr10;
-
-// text H4
-$clr-txt-H4: $clr10;
-
-// text par
-$clr-txt-par: $clr14;
-
+// backround color
+$bck__color: (
+    'home': $clr22,
+    'header': $clr12,
+    'main': $clr23,
+    'left': $clr10,
+    'right': $clr10,
+    'score': $clr23,
+    'roll__btn': $clr24,
+);
+$clr-bg-img: $clr99;
 // -------------------------
 
-// backround color
-$clr__body--light: $clr18;
-$clr__body--dark: $clr12;
-
-$clr__separation__bg--light: $clr10;
-$clr__separation__bg--dark: $clr11;
-
-$clr-bg-container: $clr13;
-
-$clr-bg-card: $clr10;
-
-$clr__header: $clr13;
-$clr__footer: $clr10;
-
-$clr__bg__h2--light: $clr18;
-$clr__bg__h2--dark: $clr12;
-
-$clr__btn: $clr19;
-$clr__btn--hover: $clr20;
-
-$clr__bg__separator--light: $clr17;
-$clr__bg__separator--dark: $clr15;
+// fonts - sizes and colors
+$fonts: (
+    'H1': (
+        color: $clr18,
+        size: 3rem,
+        height: 1em,
+    ),
+    'H2': (
+        color: $clr12,
+        size: 2rem,
+        height: 1em,
+    ),
+    'H3': (
+        color: $clr23,
+        size: 1.5rem,
+        height: 1em,
+    ),
+    'H4': (
+        color: $clr23,
+        size: 1rem,
+        height: 1em,
+    ),
+    'H5': (
+        color: $clr23,
+        size: 1rem,
+        height: 1em,
+    ),
+    'H6': (
+        color: $clr23,
+        size: 1rem,
+        height: 1em,
+    ),
+    'p': (
+        color: $clr23,
+        size: 1rem,
+        height: 1em,
+    ),
+);
+// -------------------------
 
 $clr-bg-img: $clr99;
 // -------------------------

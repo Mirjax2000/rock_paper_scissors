@@ -6,7 +6,103 @@
 // --------------------
 
 .home {
-    font-optical-sizing: auto;
-    background-color: var(--clr-body);
+    font-family: $font-family-systemUI;
 }
 
+@each $element, $styles in $fonts {
+    .#{$element} {
+        color: map-get($styles, color);
+        font-size: map-get($styles, size);
+        line-height: map-get($styles, height);
+    }
+}
+
+@each $element, $color in $bck__color {
+    .#{$element} {
+        background-color: $color;
+    }
+}
+.container {
+    max-width: em(1440, 16);
+    margin-inline: auto;
+    text-align: center;
+}
+
+header {
+    padding-block: 1em;
+}
+
+.main,
+.score {
+    border-radius: 0.5em;
+}
+
+.hero {
+    margin-top: 0.5em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    & > * {
+        flex-basis: 100%;
+        border-radius: 1em;
+        min-height: 50svh;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.511);
+        border: 1px solid rgba(96, 79, 0, 0.171);
+    }
+    .H2 {
+        margin-top: 1em;
+    }
+}
+.wrapper {
+    margin-top: 1em;
+
+    &__right,
+    &__left {
+        width: 80%;
+        margin-inline: auto;
+        margin-block: 1em;
+        border-radius: 1em;
+        aspect-ratio: 1/1;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+
+        &.fist {
+            background-image: url(../assets/img/fist.webp);
+        }
+        &.paper {
+            background-image: url(../assets/img/paper.webp);
+        }
+        &.scissor {
+            background-image: url(../assets/img/scissor.webp);
+        }
+    }
+}
+
+.score {
+    margin-top: 0.5em;
+    .H2 {
+        text-align: left;
+    }
+}
+
+.roll {
+    margin-top: 0.5em;
+    &__btn {
+        display: inline-block;
+        padding: 1em 2em;
+        border-radius: 1em;
+        box-shadow: 1px 1px 5px black;
+        cursor: pointer;
+        transition: all ease-in-out 0.1s;
+        &:hover {
+            background-color: $clr25;
+        }
+    }
+    .click {
+        transform: translateY(3px);
+    }
+}
