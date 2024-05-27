@@ -1,0 +1,12 @@
+@use '../partials/tools' as *;
+@use '../partials/assembler/' as *;
+
+// --------------------
+/* --- home main --- */
+// --------------------
+
+.home {
+    font-optical-sizing: auto;
+    background-color: var(--clr-body);
+}
+
